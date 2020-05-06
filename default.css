@@ -43,6 +43,9 @@ body {
 .wrap {
     flex-wrap: wrap;
 }
+.column {
+    flex-direction: column;
+}
 .container {
     max-width: 76.875rem;
     margin: auto;
@@ -151,8 +154,6 @@ h3 {
     color: #2E2E2E;
 }
 #what {
-    /* background-color: rgb(187, 98, 98); */
-    /* max-width: 1138.9408px; */
     margin: auto;
     text-align: center;
     margin-top: 6.5625rem;
@@ -178,10 +179,10 @@ article {
     text-align: left;
     border-radius: 0.625rem;
     padding: 0 1.875rem;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 article p:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 article:hover {box-shadow: 0 0.4375rem 1.5625rem 0 rgba(0, 0, 0, 0.05);}
@@ -201,5 +202,34 @@ article:hover .icon-4 {background-image: url('images/strategy-blanc.png');}
 article:hover .icon-5 {background-image: url('images/research-blanc.png');}
 article:hover .icon-6 {background-image: url('images/megaphone-blanc.png');}
 
-article a {color: #FF8400;font-family: 'rubik-medium';font-size: 1rem;margin-bottom: 34px;}
+article a {color: #FF8400;font-family: 'rubik-medium';font-size: 1rem;margin-bottom: 2.125rem;}
 article a::after {content: url('images/fleche.png');margin-left: 0.625rem;}
+
+/* .menu {display: none;} */
+.media{display: none;}
+
+@media  screen and (max-width:70.25rem) {article {width: 27%;} nav{width: 60%;}}
+
+@media  screen and (max-width:64rem) {
+    .header-principal {height: 9.375rem;}
+    h1 {margin-top: 10%;}
+    #what {margin-top: 10%;}
+    article {width: 40%;}
+    h3, article {text-align: center;}
+    .circle {margin: 1.25rem auto;}
+    
+    
+}
+@media screen and (max-width:45rem) {
+    /* .hide_media {display:none;} */
+    .media {display: block;margin-top: 6%;}
+    nav{width: 100%;}
+    .logo {display: none;}
+    article{width: 100%;}
+    h1 {margin-top: 0;}
+}
+
+
+@media screen and (max-width:30rem){ 
+    .hide-smart{display: none;}
+}
