@@ -33,13 +33,17 @@ body {
     font-family: 'rubik-regular';
     font-size: 1.0625rem;
     line-height: 2rem;
+    color: #5E5E5E;
 }
 
 .d-flex {
     display: flex;
     justify-content: space-between;
 }
-.container-principal {
+.wrap {
+    flex-wrap: wrap;
+}
+.container {
     max-width: 76.875rem;
     margin: auto;
 }
@@ -129,3 +133,73 @@ h1 {
     margin-top: 9.375rem;
     margin-bottom: 0.9375rem;
 }
+
+/*******************************
+Section principale
+********************************/
+
+h2 {
+    font-family: 'rubik-medium';
+    font-size: 2.25rem;
+    line-height: 2.7rem;
+    margin-bottom: 0.9375rem;
+    color: #2D2E30;
+    font-weight: 100;
+}
+
+h3 {
+    color: #2E2E2E;
+}
+#what {
+    /* background-color: rgb(187, 98, 98); */
+    /* max-width: 1138.9408px; */
+    margin: auto;
+    text-align: center;
+    margin-top: 6.5625rem;
+}
+
+.what-intro {
+    width: 68%;
+    margin: auto;
+    color: #6B6D73;
+    margin-bottom: 4.625rem;
+}
+
+.circle {
+    height: 4.375rem;
+    width: 4.375rem;
+    border-radius: 2.1875rem;
+    background: center white no-repeat;
+    box-shadow: 0 0.4375rem 1.5625rem 0 rgba(0, 0, 0, 0.10);
+    margin-top: 2.5rem;
+}
+article {
+    width: 28%;
+    text-align: left;
+    border-radius: 0.625rem;
+    padding: 0 1.875rem;
+    margin-bottom: 40px;
+}
+article p:last-child {
+    margin-bottom: 30px;
+}
+
+article:hover {box-shadow: 0 0.4375rem 1.5625rem 0 rgba(0, 0, 0, 0.05);}
+article:hover .circle {background-color: #FF8400;}
+
+.icon-1 {background-image: url('images/analysis.png');}
+.icon-2 {background-image: url('images/developpement.png');}
+.icon-3 {background-image: url('images/idea-dvpt.png');}
+.icon-4 {background-image: url('images/strategy.png');}
+.icon-5 {background-image: url('images/research.png');}
+.icon-6 {background-image: url('images/megaphone.png');}
+
+article:hover .icon-1 {background-image: url('images/analysis-blanc.png');}
+article:hover .icon-2 {background-image: url('images/developpement-blanc.png');}
+article:hover .icon-3 {background-image: url('images/idea-dvpt-blanc.png');}
+article:hover .icon-4 {background-image: url('images/strategy-blanc.png');}
+article:hover .icon-5 {background-image: url('images/research-blanc.png');}
+article:hover .icon-6 {background-image: url('images/megaphone-blanc.png');}
+
+article a {color: #FF8400;font-family: 'rubik-medium';font-size: 1rem;margin-bottom: 34px;}
+article a::after {content: url('images/fleche.png');margin-left: 0.625rem;}
